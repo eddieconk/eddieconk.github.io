@@ -132,7 +132,7 @@ $(document).ready(function() {
             var ot = $(this).offset().top;  //* top of skills section
             var ob = ot + $(this).height(); //* bottom of skills section
 
-            if(!$(this).attr("loaded") && (wt<ob && wb > ot)) {
+            if(!$(this).attr("loaded") && (wt<(ob-250) && wb > (ot + 250))) {
                 setTimeout(function() {    
                     $('.skill-icon-color-html').each(function(i) {
                         setTimeout(function() {
@@ -173,7 +173,7 @@ $(document).ready(function() {
                         }, 150 * i);
                     });
                     $(this).attr("loaded",true);
-                }, 1000);
+                }, 1200);
             }
         });
     }
