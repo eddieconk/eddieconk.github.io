@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eddie Conk</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,700,500italic,700italic,400italic' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+        </script> 
+        <script src = "assets/js/script.js"></script>
+
+        <!-- Load the Paper.js library -->
+        <script type="text/javascript" src="assets/js/paperjs/paper.js"></script>
+        <script type="text/paperscript" src="assets/js/landing.js" canvas="landing"></script>
+        <script src="assets/js/localscroll.js" type="text/javascript"></script> 
+        <script src="assets/js/jquery.scrollTo.js" type="text/javascript"></script> 
+
+    </head>
+    <body>
+        <div class = "page-wrapper">
+            <!-- Carousel Section -->
+            <section class = "section" id = "landing-section"> 
+                <div class="card">
+                    <div id="animation-container">
+                        <canvas id="landing" resize>
+                    </div>
+                </div>
+                <div id="ed-container">
+                    <div id="eddie">
+                        EDDIE CONK
+                    </div>
+                </div>
+                <div id="intro-container">
+                    <div id="intro-left">
+                        <div id="intro-left-text">
+                            student<br>
+                            developer<br>
+                            entrepreneur<br>
+                        </div>
+                    </div>
+                    <div id="intro-right">
+                        <div id="intro-right-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mattis magna non suscipit vulputate. Curabitur tempor tristique felis id dictum. Nam in lorem vitae purus aliquet sollicitudin vitae eu nunc. <br>
+                            Aenean pretium tempor ipsum, eu fermentum elit ornare id. Nunc a dapibus nibh. Quisque vehicula feugiat metus sed condimentum. Mauris suscipit libero neque.
+                        </div>
+
+                    </div>
+                </div>
+                <div class="down-button" id="nav1">
+                    <a href="#education">
+                        <img class="down-scaled bounce" src="assets/img/downarrow.png" />
+                    </a>
+                </div>
+            </section>
+            <section class="section" name="education" id="education">
+                <div id="card">
+                </div>
+                <div id="education-container">
+                    <div id="education-text">
+                        EDUCATION
+                    </div>
+                </div>
+                <div id="edu-info">
+                    UC Berkeley, Class of 2017<br>
+                    Major: Computer Science<br>
+                    Regent's & Chancellor's Scholar
+                </div>
+                <div class="button" id="relevant-courses">
+                    relevant coursework
+                </div>
+                <a id="schol-link" target="_blank" href="http://financialaid.berkeley.edu/regents-and-chancellors-scholarship" />
+                    <div class="button" id="scholar">
+                        scholarship info
+
+                    </div>
+                </a>
+                <div id="calpng">
+                    <img id="cal" src="assets/img/cal.png" />
+                </div>
+                <div class="down-button" id="education">
+                    <a href="#work-experience">
+                        <img class="down-scaled" id="white" src="assets/img/downarrow.png" />
+                    </a>
+                </div>
+                <div id="modal-container">
+                    <div id="modal-box" style="background: white">
+                    </div>
+                    <div id="modal-box">
+                        <div id="modal-close">
+                            <img src="assets/img/close_icon.png" id="close-icon"/>
+                        </div>
+                        <div id="modal-header">
+                            Courses:
+                        </div>
+                        <div id="modal-content">
+                            CS 61A&nbsp;----------&nbsp;Structure & Interpretation of Computer Programs<br>
+                            CS 61B&nbsp;----------&nbsp;Data Structures<br>
+                            CS 198&nbsp;----------&nbsp;Web Design Decal<br>
+                            Math 54&nbsp;--------&nbsp;Linear Algebra<br>
+                            UGBA 10&nbsp;-------&nbsp;Principles of Business<br>
+                            UGBA 98&nbsp;-------&nbsp;Impact Investing<br>
+                            ECON 1&nbsp;---------&nbsp;Introduction to Economics<br>
+                            PHILOS 12A&nbsp;--&nbsp;Introduction to Logic
+                        </div>
+                    </div>
+                </div>
+                <div id="modal-overlay">
+                </div>
+            </section>
+            <section class = "section" id = "work-experience"> 
+                <div class="card">
+                </div>
+                <div id="work-container">
+                    <div id="work-text">
+                        WORK EXPERIENCE
+                    </div>
+                </div>
+                <div id="jobs-container">
+                    <div class="job-box">
+                        <div class="job-title" id="esurf">
+                            eSurface Technologies
+                        </div>
+                        <div class="job-body" id="esurf-bod">
+                        </div>
+                    </div>
+                    <div class="job-box" id="free-box">
+                        <div class="job-title" id="freelance">
+                            Freelance
+                        </div>
+                        <div class="job-body" id="freelance-bod">
+                        </div>
+                    </div>
+                      <div class="job-box" id="ucbmls-cont">
+                        <div class="job-title" id="ucbmls">
+                            UCBMLS
+                        </div>
+                        <div class="job-body" id="mls-bod">
+                        </div>
+                    </div>
+                    <div id="block">
+                    </div>
+                </div>
+                 <div id="esurf-body-text">
+                    eSurface licenses a proprietary circuit board manufacturing process to different electronics manufacturers internationally.<br><br>
+                    <a href="www.esurface.com" id="esurf-link" style="">
+                        &lt;eSurface website&gt;
+                    </a>
+                </div>
+                 <div id="freelance-body-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet felis varius, egestas metus vel, feugiat sem.<br><br>
+                    <a href="www.esurface.com" id="esurf-link" style="">
+                        &lt;eSurface website&gt;
+                    </a>
+                </div>
+                <div class="job-text-container" id="marketing">
+                    <div class="job-text-title">
+                        Marketing Intern &nbsp;&nbsp; <span style="font-size: 1.5em">|</span> &nbsp;&nbsp; 6/14 - 9/14
+                    </div>
+                    <div class="job-summary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat efficitur nulla a pulvinar. Ut quis accumsan mauris. Quisque ut dignissim nisl. Sed ornare sagittis vestibulum. Nam et hendrerit nisl, id auctor justo. Vestibulum quis neque luctus, placerat tellus non, pulvinar sapien.
+                    </div>
+                    <div class="job-footer">
+                        <div class="button" id="job-more-info">
+                            tell me more
+                        </div>
+                        <div class="button" id="job-cancel">
+                            I get the picture
+                        </div>
+                    </div>
+                </div>
+                <div class="job-text-container" id="freelance-box">
+                    <div class="job-text-title">
+                        Freelance Web Developer &nbsp;&nbsp; <span style="font-size: 1.5em">|</span> &nbsp;&nbsp; 6/14 - 9/14
+                    </div>
+                    <div class="job-summary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat efficitur nulla a pulvinar. Ut quis accumsan mauris. Quisque ut dignissim nisl. Sed ornare sagittis vestibulum. Nam et hendrerit nisl, id auctor justo. Vestibulum quis neque luctus, placerat tellus non, pulvinar sapien.
+                    </div>
+                    <div class="job-footer">
+                        <div class="button" id="job-more-info">
+                            tell me more
+                        </div>
+                        <div class="button" id="job-cancel">
+                            I get the picture
+                        </div>
+                    </div>
+                </div>
+                <div class="job-text-container" id="mls-box">
+
+                    <div class="job-text-title">
+                        Sr. Web Manager &nbsp;&nbsp; <span style="font-size: 1.5em">|</span> &nbsp;&nbsp; 6/14 - 9/14
+                    </div>
+                    <div class="job-summary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat efficitur nulla a pulvinar. Ut quis accumsan mauris. Quisque ut dignissim nisl. Sed ornare sagittis vestibulum. Nam et hendrerit nisl, id auctor justo. Vestibulum quis neque luctus, placerat tellus non, pulvinar sapien.
+                    </div>
+                    <div class="job-footer">
+                        <div class="button" id="job-more-info">
+                            tell me more
+                        </div>
+                        <div class="button" id="job-cancel">
+                            I get the picture
+                        </div>
+                    </div>
+                </div>
+                <div class="down-button" id="work-experience-arrow">
+                    <a href="#skills">
+                        <img class="down-scaled" src="assets/img/downarrow.png" />
+                    </a>
+                </div>
+            </section>
+            <section class="section" name="skills" id="skills">
+                <div id="skills-container">
+                    <div id="skills-title">
+                        SKILLS
+                    </div>
+                </div>
+                <div id="skills-box">
+                    <div class="skill" id="HTML-skill">
+                        HTML
+                        <div class="skill-level-container">
+                            <div class="skill-icon-color-html" id="html1">
+                            </div>
+                            <div class="skill-icon-color-html" id="html2">
+                            </div>
+                            <div class="skill-icon-color-html" id="html3">
+                            </div>
+                            <div class="skill-icon-color-html" id="html4">
+                            </div>
+                            <div class="skill-icon-color-html" id="html5">
+                            </div>
+                            <div class="skill-icon-color-html"id="html6">
+                            </div>
+                            <div class="skill-icon-color-html"id="html7">
+                            </div>
+                            <div class="skill-icon">
+                            </div>
+                            <div class="skill-icon">
+                            </div>
+                            <div class="skill-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill" id="css-skill">
+                        CSS
+                        <div class="skill-level-container">
+                            <div class="skill-icon-color-css" id="css1">
+                            </div>
+                            <div class="skill-icon-color-css" id="css2">
+                            </div>
+                            <div class="skill-icon-color-css" id="css3">
+                            </div>
+                            <div class="skill-icon-color-css" id="css4">
+                            </div>
+                            <div class="skill-icon-color-css" id="css5">
+                            </div>
+                            <div class="skill-icon-color-css" id="css6">
+                            </div>
+                            <div class="skill-icon-color-css" id="css7">
+                            </div>
+                            <div class="skill-icon-color-css" id="css8">
+                            </div>
+                            <div class="skill-icon">
+                            </div>
+                            <div class="skill-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill" id="JavaScript">
+                        JavaScript
+                        <div class="skill-level-container">
+                            <div class="skill-icon-color-js" id="js1">
+                            </div>
+                            <div class="skill-icon-color-js" id="js2">
+                            </div>
+                            <div class="skill-icon-color-js" id="js3">
+                            </div>
+                            <div class="skill-icon-color-js" id="js4">
+                            </div>
+                            <div class="skill-icon-color-js" id="js5">
+                            </div>
+                            <div class="skill-icon-color-js" id="js6">
+                            </div>
+                            <div class="skill-icon">
+                            </div>
+                            <div class="skill-icon">
+                            </div>
+                            <div class="skill-icon">
+                            </div>
+                            <div class="skill-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill" id="java-skill">
+                        Java
+                        <div class="skill-level-container">
+                            <div class="skill-icon-color-java" id="java1">
+                            </div>
+                            <div class="skill-icon-color-java" id="java2">
+                            </div>
+                            <div class="skill-icon-color-java" id="java3">
+                            </div>
+                            <div class="skill-icon-color-java" id="java4">
+                            </div>
+                            <div class="skill-icon-color-java" id="java5">
+                            </div>
+                            <div class="skill-icon-color-java" id="java6">
+                            </div>
+                            <div class="skill-icon">
+                            </div>
+                            <div class="skill-icon">
+                            </div>
+                            <div class="skill-icon">
+                            </div>
+                            <div class="skill-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill" id="illus">
+                        Illustrator
+                        <div class="skill-level-container">
+                            <div class="skill-icon-color-illus" id="illus1">
+                            </div>
+                            <div class="skill-icon-color-illus" id="illus2">
+                            </div>
+                            <div class="skill-icon-color-illus" id="illus3">
+                            </div>
+                            <div class="skill-icon-color-illus" id="illus4">
+                            </div>
+                            <div class="skill-icon-color-illus" id="illus5">
+                            </div>
+                            <div class="skill-icon-color-illus" id="illus6">
+                            </div>
+                            <div class="skill-icon-color-illus" id="illus7">
+                            </div>
+                            <div class="skill-icon-color-illus">
+                            </div>
+                            <div class="skill-icon-color-illus">
+                            </div>
+                            <div class="skill-icon-color-illus">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill" id="photoshop">
+                        PhotoShop
+                        <div class="skill-level-container">
+                            <div class="skill-icon-color-ps" id="ps1">
+                            </div>
+                            <div class="skill-icon-color-ps" id="ps2">
+                            </div>
+                            <div class="skill-icon-color-ps" id="ps3">
+                            </div>
+                            <div class="skill-icon-color-ps" id="ps4">
+                            </div>
+                            <div class="skill-icon-color-ps" id="ps5">
+                            </div>
+                            <div class="skill-icon-color-ps" id="ps6">
+                            </div>
+                            <div class="skill-icon-color-ps" id="ps7">
+                            </div>
+                            <div class="skill-icon-color-ps" id="ps8">
+                            </div>
+                            <div class="skill-icon">
+                            </div>
+                            <div class="skill-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill" id="soc-media">
+                        Social Media
+                        <div class="skill-level-container">
+                            <div class="skill-icon-color-soc" id="soc1">
+                            </div>
+                            <div class="skill-icon-color-soc" id="soc2">
+                            </div>
+                            <div class="skill-icon-color-soc" id="soc3">
+                            </div>
+                            <div class="skill-icon-color-soc" id="soc4">
+                            </div>
+                            <div class="skill-icon-color-soc" id="soc5">
+                            </div>
+                            <div class="skill-icon-color-soc" id="soc6">
+                            </div>
+                            <div class="skill-icon-color-soc" id="soc7">
+                            </div>
+                            <div class="skill-icon-color-soc" id="soc8">
+                            </div>
+                            <div class="skill-icon-color-soc" id="soc9">
+                            </div>
+                            <div class="skill-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="down-button" style="background: white; z-index: 0;">
+                </div>
+                <div class="down-button" id="skills-arrow">
+                    <a href="#contact">
+                        <img class="down-scaled" src="assets/img/downarrow.png" id="white"/>
+                    </a>
+                </div>
+            </section>
+            <section class="section" id="contact">
+                <div id="contact-container">
+                    <div id="contact-text">
+                        CONTACT ME
+                    </div>
+                </div>
+
+                <div id="bisection">
+                </div>
+
+                <div class="right-side">
+                    <div class="button" id="PDF-Resume">
+                        resume PDF
+                    </div>
+                    <div class="button" id="back-to-top">
+                        <a href="#landing-section">
+                        back to top
+                        </a>
+                    </div>
+                </div>
+                <div class="left-side">
+                    <div id="email">
+                        eddieconk@berkeley.edu<br>
+                        Skype ID: eddieconk
+                    </div>
+                    <div id="linked">
+                        <img src="assets/img/linked.png" />
+                    </div>
+                    <div id="git">
+                        <img src="assets/img/github.png" />
+                    </div>
+                </div>
+                <div id="berk-graphic">
+                    <img src="assets/img/contact_graphic.png" />
+                </div>
+                <div id="sf-graphic">
+                    <img src="assets/img/sf.png" />
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
