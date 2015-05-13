@@ -97,7 +97,8 @@
 
 #intro-left-text {
 	position: relative;
-	top: 20%;
+	top: 24%;
+	height: 42%;
 }
 #intro-right {
 	position: relative;
@@ -111,7 +112,8 @@
 	padding-left: 5%;
 	padding-right: 10%;
 	line-height: 2.5em;
-	top: 9.5%;
+	top: 24%;
+	height: 42%;
 }
 
 .button {
